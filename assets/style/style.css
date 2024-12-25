@@ -885,7 +885,7 @@ form fieldset input[type=radio]:checked:after {
 }
 
 .hero {
-  height: 100vh;
+  height: calc(100vh - 135px);
   position: relative;
 }
 .hero__img {
@@ -917,13 +917,13 @@ form fieldset input[type=radio]:checked:after {
 }
 @media screen and (min-width: 768px) {
   .hero__container {
-    height: 100vh;
+    height: calc(100vh - 135px);
   }
 }
 @media screen and (max-width: 767.9px) {
   .hero__container {
     margin-left: -20px;
-    width: calc(100vw - 20px);
+    width: 100vw;
   }
 }
 .hero__content {
