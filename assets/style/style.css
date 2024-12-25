@@ -886,11 +886,45 @@ form fieldset input[type=radio]:checked:after {
 
 .hero {
   height: 100vh;
-  background: url(../images/hero-img.jpg) center center/cover no-repeat;
+  position: relative;
+}
+.hero__img {
+  width: 100%;
+  height: 50vh;
+  aspect-ratio: 360/346;
+}
+.hero__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .hero__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    height: 100%;
+  }
 }
 .hero__container {
-  height: 100vh;
   display: flex;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  .hero__container {
+    margin-left: -20px;
+    width: calc(100vw - 20px);
+  }
 }
 .hero__content {
   padding: 30px 20px;
@@ -1025,15 +1059,10 @@ form fieldset input[type=radio]:checked:after {
 }
 .advantages__item__count {
   font-family: "IBM Plex Serif";
-  font-size: 40px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-}
-@media screen and (min-width: 768px) {
-  .advantages__item__count {
-    font-size: 50px;
-  }
 }
 .advantages__item p {
   font-size: 14px;
