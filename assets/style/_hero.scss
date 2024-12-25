@@ -1,0 +1,37 @@
+.hero{
+	height: 100vh;
+	background: url(../images/hero-img.jpg) center center / cover no-repeat;
+	
+	&__container{
+		height: 100vh;
+		display: flex;
+	}
+		&__content{
+		padding: 30px 20px;
+		background-color: $--green;
+		max-width: 753px;
+		color: $--white-orange;
+		margin-top: auto;
+		@media screen and (min-width:768px) {
+			padding: 60px 40px;
+		}
+		& h1{
+			@include titleH1;
+			margin-bottom: 20px;
+		}
+		& .space{
+			margin-bottom: 20px;
+			&::before,
+			&::after{
+				width: 14px;
+				height: 14px;
+			}
+
+		}
+		& p{
+			@include p2;
+			margin-bottom: 40px;
+		}
+	
+	}
+}

@@ -1,0 +1,106 @@
+.faq{
+	padding: 120px 0;
+	background: $--radial-gradient;
+	&__title{
+		h2{
+			color: $--white-orange;
+			text-transform: uppercase;
+		}
+		
+	}
+	&__item{
+		transition: .3s linear;
+		&:hover{
+			.faq__item__top{
+				background-color: #BFA77B;
+			}
+		}
+		&__top{
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			padding: 20px;
+			background-color: #FFF9EF;
+			border: 1px solid $--green;
+			@media screen and (min-width:768px) {
+				padding: 30px 30px;
+				gap: 20px;
+			}
+			.active &{
+				background-color: #BFA77B;
+			}
+
+			 p{
+				@include titleH5;
+			 }
+		}
+		&-bottom-wrap{
+			color: $--white-orange;
+		padding:0 40px 40px 40px;
+		background-color: transparent;
+		@include p2;
+		p{
+			margin-bottom: 20px;
+
+		}
+		ul{
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+			list-style-type: disc;
+			list-style-position: inside;
+			li::marker{
+				color: $--white-orange;
+			}
+		}
+		}
+	}
+	&__count{
+		display: flex;
+		gap: 20px;
+		width: fit-content;
+		margin-right: 20px;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			position: relative;
+			font-family: 'IBM Plex Serif', sans-serif;
+			@media screen and (min-width:768px) {
+				font-size: 20px;
+			}
+			&:after{
+				content: '';
+				width: 1px;
+				height: 30px;
+				background-color: $--green;
+			}
+		 
+	}
+	&-icon-wrapper{
+		background-color: $--green;
+		min-width: 32px;
+		min-height: 32px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: auto;
+		@media screen and (min-width:768px) {
+			min-width: 40px;
+		min-height: 40px;
+		}
+		 svg{
+			width: 15px;
+			height: 10px;
+			transition: .3s linear;
+			@media screen and (min-width:768px) {
+				width: 20px;
+				height: 15px;
+			}
+			.active &{
+				transform: rotate(90deg);
+			}
+		 }
+	}
+	
+}
