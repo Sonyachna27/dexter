@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	commandSliderFunc();
 	newsSliderFunc();
 	accordionFunction();
+	handlePopup();
 });
 
 const animationHeader = () =>{
@@ -176,4 +177,25 @@ const accordionFunction = () => {
         item.classList.toggle("active");
     });
   });
+};
+
+const handlePopup = () => {
+	const openPopup = () => {
+			document.querySelectorAll('[data-open="open"]').forEach(element => {
+					element.addEventListener('click', () => {
+							document.documentElement.classList.add('open-popup');
+					});
+			});
+	};
+
+	const closePopup = () => {
+			document.querySelectorAll('[data-close="close"]').forEach(element => {
+					element.addEventListener('click', () => {
+							document.documentElement.classList.remove('open-popup');
+					});
+			});
+	};
+
+	openPopup();
+	closePopup();
 };

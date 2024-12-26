@@ -43,7 +43,8 @@ $--beige: #BFA77B;
 $--white-orange:#FFF9EF;
 $--white-sandy: #FFF6E4;
 $--silver: #D6D4C8;
-html.open{
+html.open,
+html.open-popup{
 	overflow: hidden;
 }
 body{
@@ -74,12 +75,10 @@ max-width: fit-content;
 width: 100%;
 
 	&:hover{
-		background-color: $--green;
-		color: $--white-orange;
+		background-color: #9A855E;
 	}
 	&:disabled{
-		background-color: $--white-orange;
-		color: $--green;
+		background-color: #A4A3A2;
 	}
 	@media screen and (max-width:767.9px) {
 		padding: 20px 10px;
@@ -96,20 +95,23 @@ width: 100%;
 .socials{
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: start;
 	gap: 10px;
 	a{
-		max-width: 29px;
-		max-height: 29px;
-		width: 100%;
-		height: 100%;
+		width: 48px;
+		height: 48px;
+		&:hover{
+			circle{
+				fill: #A3926B;
+			}
+		}
 	}
 	& svg{
 		max-width: 100%;
 		max-height: 100%;
 		width: 100%;
 		height: 100%;
-		path{
+		circle{
 			transition: .3s linear;
 		}
 	}
@@ -124,16 +126,22 @@ width: 100%;
 		width: fit-content;
 		gap: 10px;
 		font-family: "Manrope";
-		font-size: 24px;
+		font-size: 19px;
 		font-style: normal;
 		font-weight: 700;
 		line-height: normal;
+		@media screen and (min-width:768px) {
+			font-size: 24px;
+		}
+		@media screen and (max-width:375px){
+			word-break: break-all;
+		}
 		& svg{
 			width: 48px;
 			height: 48px;
 		}
 		&:hover{
-			color: $--white;
+			color: #BFA77B;
 		}
 	}
 
@@ -145,11 +153,7 @@ width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-
 	transition: .3s linear;
-		&:hover{
-				
-		}
 	}
 }
 .mb-m{
@@ -184,7 +188,7 @@ width: 100%;
 .center-title{
 	max-width: fit-content;
 	margin: 0 auto;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 	text-align: center;
 	display: flex;
 			flex-direction: column;
@@ -193,18 +197,36 @@ width: 100%;
 		@include titleH2;
 		color: $--green;
 	}
+	@media screen and (min-width:768px) {
+		margin-bottom: 60px;
+	}
 }
 .slider-btn{
 	width: 47px;
 	height: 47px;
+	cursor: pointer;
 	.withoutSlider &{
 		display: none;
 	}
 		svg{
 			width: 100%;
 			height: 100%;
+			rect{
+				transition: .3s linear;
+			}
+		}
+		&:hover{
+			rect{
+				fill: #A3926B;
+			}
 		}
 		&.swiper-button-disabled{
+			&:hover{
+				cursor: not-allowed;
+				rect{
+					fill:#B0B4B9;
+			}
+			}
 			rect{
 				fill:#B0B4B9;
 		}
@@ -271,7 +293,7 @@ form{
 	width: 100%;
 	
 	@media screen and (min-width:768px) {
-		gap: 15px;
+		gap: 20px;
 	}
 	input,
 	fieldset{
@@ -284,7 +306,7 @@ form{
 	input:not([type="submit"], [type="checkbox"]),
 	select{
 		display: flex;
-		padding: 20px 25px;
+		padding: 20px;
 		align-items: center;
 		gap: 10px;
 		border-radius: 0;
@@ -292,47 +314,26 @@ form{
 		max-width: 100%;
 		width: 100%;
 		color: $--white-orange;
-		&::placeholder{
-			color: #8D909B;
-			font-size: 14px;
+		background-color: transparent;
+		line-height: 140%;
+		color: $--white-orange;
+			font-size: 16px;
 			font-style: normal;
 			font-weight: 500;
-			line-height: 140%; 
-		}
-		&:focus-visible{
-			border-bottom-color: $--white;
+		&::placeholder{
 			color: $--white-orange;
-			font-size: 14px;
+			font-size: 16px;
 			font-style: normal;
 			font-weight: 500;
 			line-height: 140%;
+			opacity: 0.5; 
+		}
+		&:focus-visible{
+			
+			
+			opacity: 1;
 		}
 	}
-	.form__check{
-		display: flex;
-		align-items: center;
-		gap: 10px;
-		font-size: 12px;
-		font-style: normal;
-		font-weight: 500;
-		line-height: normal;
-		color: $--white;
-		text-transform: none;
-		margin-bottom: 20px;
-		@media screen and (min-width:768px) {
-			margin-bottom: 40px;
-		}
-	}
-
-&::placeholder{
-		color: $--white-orange;
-		font-size: 14px;
-		font-style: normal;
-		font-weight: 500;
-		line-height: 140%; 
-		padding: 20px 25px;
-	}
-
 
 		input[type="submit"]{
 			display: flex;
@@ -362,33 +363,29 @@ form{
 			}
 			
 		&:hover{
-				background-color: $--white-orange;
+				background-color: #9A855E;
 		}
 		}
-	
-	// .form__touch{
-	// 	color: #FFF;
-	// 	font-size: 14px;
-	// 	font-style: normal;
-	// 	font-weight: 500;
-	// 	line-height: 140%;
-	// 	@media screen and (min-width:768px) {
-	// 		font-size: 16px;
-	// 	}
-	// }
+
 	fieldset{
 		color: rgba(255, 249, 239, 0.50);
 		font-size: 14px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 140%;
-	
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 10px;
+		margin-bottom: 30px;
+		
 	& label{
 		display: flex;
 		gap: 8px;
 		align-items: center;
 		width: fit-content;
 		position: relative;
+		cursor: pointer;
 	}
 
 	input[type="radio"]{
@@ -423,6 +420,7 @@ form{
 		}
 		&:checked{
 			border-color: $--white-orange;
+			
 			&:after{
 				background-color: $--white-orange;
 			}
