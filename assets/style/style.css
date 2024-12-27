@@ -1356,6 +1356,7 @@ form fieldset input[type=radio]:checked:after {
   background: none;
   padding: none;
   cursor: pointer;
+  color: #313F2D;
 }
 @media screen and (min-width: 768px) {
   .services__item__content__link {
@@ -2200,8 +2201,14 @@ form fieldset input[type=radio]:checked:after {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+  flex-direction: column;
   margin-bottom: 60px;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .publication-date {
+    flex-direction: row;
+  }
 }
 .publication-date span {
   display: inline-flex;
