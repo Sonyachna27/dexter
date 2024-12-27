@@ -18,6 +18,10 @@
 		}
 		& .logo{
 			min-width: 258px;
+			max-width: 258px;
+			img{
+				max-width: 100%;
+			}
 		}
 	}
 		&__column{

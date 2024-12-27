@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-	heroBG();
 	toggleMenu();
 	prettyScroll();
 	animationHeader();
@@ -9,7 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	accordionFunction();
 	handlePopup();
 });
-
+AOS.init({
+	duration: 1000,
+});
 const animationHeader = () =>{
 	let lastScrollTop = 0;
 
@@ -220,21 +221,4 @@ const prettyScroll = () =>{
 				});
 		});
 	});
-}
-
-const heroBG = () =>{
-	
-	const block = document.querySelector('.hero__img');
-	if(!block) return;
-  const settings = JSON.parse(block.getAttribute('data-settings'));
-
-  if (settings.background_background === "video") {
-    const video = document.createElement('video');
-    video.src = settings.background_video_link;
-    video.autoplay = true;
-    video.muted = true;
-    video.loop = true;
-    video.playsInline = true;
-    block.appendChild(video);
-  }
 }

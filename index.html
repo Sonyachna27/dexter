@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/style/swiper.css">
+	<link rel="stylesheet" href="./assets/style/aos.css">
 	<link rel="preload" href="./assets/style/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="./assets/style/style.css"></noscript>
 	<title>Document</title>
@@ -119,12 +120,10 @@
 	</header>
 	<main>
 	<section class="hero">
-		<div class="hero__img" style="background-image: url(./assets/images/hero-img.webp);" class="background-video-block" data-settings='{
-			"background_background":"video",
-			"background_video_link":"./assets/images/vecteezy_aerial-pan-of-ukrainian-flag-flying-in-independence-square_10903200(1).mp4",
-			"background_play_on_mobile":"yes",
-			"background_video_start":0
-		}'>
+		<div class="hero__img">
+			<video autoplay muted loop playsinline class="video-bg">
+				<source src="./assets/images/vecteezy.mp4" type="video/mp4">
+		</video>
 		</div>
 		<div class="container">
 			<div class="hero__container">
@@ -137,7 +136,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="advantages">
+	<section class="advantages" data-aos="fade-up">
 		<div class="container">
 			<div class="advantages__container">
 				<h2 class="advantages__title center-title">Переваги компанії <strong>DEXTER</strong></h2>
@@ -174,7 +173,7 @@
 	<section class="team mb-m" id="about">
 		<div class="container">
 			<div class="team__container">
-				<div class="team__content">
+				<div class="team__content" data-aos="fade-up">
 					<h2>DEXTER — адвокатська компанія у Києві, яка забезпечує якісні юридичні послуги</h2>
 					<div class="team__content__text">
 						<p>Dexter — адвокатська компанія, розташована в Києві, яка надає висококваліфіковані юридичні послуги для фізичних осіб і бізнесу. Наша команда складається з досвідчених адвокатів, які спеціалізуються на цивільному, кримінальному та господарському праві, а також на інших важливих сферах права. </p>
@@ -182,7 +181,7 @@
 					</div>
 				</div>
 				<div class="space"></div>
-				<div class="team__img">
+				<div class="team__img" data-aos="fade-up">
 					<img src="./assets/images/team-img.webp" alt="DEXTER — адвокатська компанія у Києв">
 				</div>
 			</div>
@@ -286,9 +285,9 @@
 					<h2>Юридичні послуги <strong>від Dexter</strong></h2>
 				</div>
 				<div class="services__items">
-					<div class="services__item">
+					<div class="services__item" data-aos="fade-up">
 					<div class="services__item__img"> 
-						<img src="./assets/images/hero-img.jpg" alt="Консультації з правових питань">
+						<img src="./assets/images/hero-img.webp" alt="Консультації з правових питань">
 					</div>
 						<div class="services__item__content">
 							<h3>Консультації з правових питань</h3>
@@ -296,9 +295,9 @@
 							<button data-open="open"  class="services__item__content__link" >ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ</button>
 						</div>
 					</div>
-					<div class="services__item">
+					<div class="services__item" data-aos="fade-up">
 					<div class="services__item__img"> 
-						<img src="./assets/images/hero-img.jpg" alt="Консультації з правових питань">
+						<img src="./assets/images/hero-img.webp" alt="Консультації з правових питань">
 					</div>
 						<div class="services__item__content">
 							<h3>Супровід угод та договорів</h3>
@@ -306,9 +305,9 @@
 							<button data-open="open"  class="services__item__content__link">ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ</button>				
 								</div>
 					</div>
-					<div class="services__item">
+					<div class="services__item" data-aos="fade-up">
 					<div class="services__item__img"> 
-						<img src="./assets/images/hero-img.jpg" alt="Консультації з правових питань">
+						<img src="./assets/images/hero-img.webp" alt="Консультації з правових питань">
 					</div>
 						<div class="services__item__content">
 							<h3>Корпоративне право</h3>
@@ -316,9 +315,9 @@
 							<button data-open="open"  class="services__item__content__link" >ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ</button>
 						</div>
 					</div>
-					<div class="services__item">
+					<div class="services__item" data-aos="fade-up">
 					<div class="services__item__img"> 
-						<img src="./assets/images/hero-img.jpg" alt="Захист інтелектуальної власності">
+						<img src="./assets/images/hero-img.webp" alt="Захист інтелектуальної власності">
 					</div>
 						<div class="services__item__content">
 							<h3>Захист інтелектуальної власності</h3>
@@ -360,7 +359,7 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide news__slide news__item">
 								<a href="./page-news.html" class="news__item__img">
-									<img src="./assets/images/hero-img.jpg" alt="Верховний Суд України змінив">
+									<img src="./assets/images/hero-img.webp" alt="Верховний Суд України змінив">
 								</a>
 								<div class="news__item__content">
 									<a href="./page-news.html" class="news__item__content__title">	
@@ -384,7 +383,7 @@
 							</div>
 							<div class="swiper-slide news__slide news__item">
 								<a href="./page-news.html" class="news__item__img">
-									<img src="./assets/images/hero-img.jpg" alt="Верховний Суд України змінив">
+									<img src="./assets/images/hero-img.webp" alt="Верховний Суд України змінив">
 								</a>
 								<div class="news__item__content">
 									<a href="./page-news.html" class="news__item__content__title">	
@@ -570,12 +569,12 @@
 			</div>
 		</div>
 	</section>
-	<section class="contacts" id="contact">
+	<section class="contacts" id="contact" data-aos="fade-up">
 			<div class="contacts__frame">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.81649700957!2d30.534657100000004!3d50.4445186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfac9dee308d%3A0x2e7be8ae1dba0888!2z0LLRg9C70LjRhtGPINCb0LjQv9GB0YzQutCwLCAxMCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1735220543955!5m2!1suk!2sua" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 			<div class="container">
-				<div class="contacts__container">
+				<div class="contacts__container" >
 				<div class="contacts__content">
 					<h2>Наші <strong>контакти</strong></h2>
 					<div class="contacts__items contact">
@@ -736,7 +735,7 @@
 		</div>
 		</div>
 	</footer>
-	
+	<script src="./assets/js/aos.js"></script>
 	<script src="./assets/js/swiper.js"></script>
 	<script src="./assets/js/script.js"></script>
 </body>

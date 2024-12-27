@@ -85,10 +85,13 @@ width: 100%;
 		max-width: 100%;
 	}
 }
-.logo img{
-	width: 100%;
-	height: fit-content;
-	
+.logo{
+	display: block;
+	& img{
+		max-width: 100%;
+		width: 100%;
+		height: fit-content;
+	}
 }
 .container{
 	max-width: 1340px;
