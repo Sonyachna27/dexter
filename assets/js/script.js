@@ -202,7 +202,7 @@ const handlePopup = () => {
 	closePopup();
 };
 const prettyScroll = () =>{
-	document.querySelectorAll('a[href^="#"').forEach(link => {
+	document.querySelectorAll('a[href^="#"]').forEach(link => {
 
 		link.addEventListener('click', function(e) {
 				e.preventDefault();
@@ -210,15 +210,20 @@ const prettyScroll = () =>{
 				let href = this.getAttribute('href').substring(1);
 	
 				const scrollTarget = document.getElementById(href);
-	
 				const topOffset = document.querySelector('header').offsetHeight;
+				const topOffsetFixHeader = document.querySelector('.header__bottom').offsetHeight;
+				let windowInnerWidth = window.innerWidth;
 				const elementPosition = scrollTarget.getBoundingClientRect().top;
-				const offsetPosition = elementPosition - topOffset;
-	
-				window.scrollBy({
-						top: offsetPosition,
-						behavior: 'smooth'
-				});
+				let offsetPosition = 0;
+					if (windowInnerWidth >= 1024) {
+						offsetPosition = elementPosition - topOffsetFixHeader;
+					}else{
+						offsetPosition = elementPosition - topOffset;
+					}
+					window.scrollBy({
+							top: offsetPosition,
+							behavior: 'smooth'
+					});
 		});
 	});
 }
