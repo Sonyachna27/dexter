@@ -923,6 +923,7 @@ form fieldset input[type=radio]:checked:after {
 
 .hero {
   position: relative;
+  background: url(../images/hero-img.webp) center center/cover no-repeat;
 }
 @media screen and (min-width: 1024px) {
   .hero {
@@ -1770,6 +1771,10 @@ form fieldset input[type=radio]:checked:after {
   max-height: 64px;
   border: 1px solid #313F2D;
   border-radius: 50%;
+  transition: 0.3s linear;
+}
+.contacts__content .socials a:hover {
+  border-color: #A3926B;
 }
 .contacts__content .btn {
   max-width: 100%;

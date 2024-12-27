@@ -78,6 +78,10 @@
 				max-height: 64px;
 				border: 1px solid $--green;
 				border-radius: 50%;
+				transition: .3s linear;
+				&:hover{
+					border-color: #A3926B;
+				}
 			}
 		}
 		& .btn{
