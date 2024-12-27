@@ -64,7 +64,7 @@ height: fit-content;
 			display: flex;
 			align-items: center;
 			gap: 10px;
-			font-size: 16px;
+			font-size: 14px;
 			font-style: normal;
 			font-weight: 500;
 			line-height: normal;
@@ -72,12 +72,18 @@ height: fit-content;
 			width: fit-content;
 			margin-top: 40px;
 			background: none;
-			padding: none;
+			
+			padding: 0;
+
 			cursor: pointer;
 			color: $--green;
 			@media screen and (min-width:768px) {
 				margin-top: 60px;
+				font-size: 16px;
 			}
+@media screen and (max-width:767.9px) {
+	text-align: center;
+}
 			&:after{
 				content: '';
 				width: 11px;

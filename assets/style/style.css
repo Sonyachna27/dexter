@@ -923,7 +923,7 @@ form fieldset input[type=radio]:checked:after {
 
 .hero {
   position: relative;
-  background: url(../images/hero-img.webp) center center/cover no-repeat;
+  background: url(../images/hero-img-bg.webp) center center/cover no-repeat;
 }
 @media screen and (min-width: 1024px) {
   .hero {
@@ -936,6 +936,7 @@ form fieldset input[type=radio]:checked:after {
   aspect-ratio: 360/346;
   overflow: hidden;
   position: relative;
+  background-color: #313F2D;
 }
 .hero__img:after {
   content: "";
@@ -1384,7 +1385,7 @@ form fieldset input[type=radio]:checked:after {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -1393,13 +1394,19 @@ form fieldset input[type=radio]:checked:after {
   width: fit-content;
   margin-top: 40px;
   background: none;
-  padding: none;
+  padding: 0;
   cursor: pointer;
   color: #313F2D;
 }
 @media screen and (min-width: 768px) {
   .services__item__content__link {
     margin-top: 60px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  .services__item__content__link {
+    text-align: center;
   }
 }
 .services__item__content__link:after {
@@ -1584,6 +1591,11 @@ form fieldset input[type=radio]:checked:after {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+@media screen and (max-width: 767.9px) {
+  .faq__item__top p {
+    font-size: 16px;
+  }
 }
 .faq__item-bottom-wrap {
   color: #FFF9EF;

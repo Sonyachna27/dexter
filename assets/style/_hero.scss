@@ -1,6 +1,6 @@
 .hero{
 	position: relative;
-	background: url(../images/hero-img.webp) center center / cover no-repeat;
+	background: url(../images/hero-img-bg.webp) center center / cover no-repeat;
 	@media screen and (min-width:1024px) {
 		height:calc(100vh - 135px);
 	}
@@ -10,6 +10,7 @@
 		aspect-ratio: 360 / 346;
 		overflow: hidden;
 		position: relative;
+		background-color: $--green;
 		&:after{
 			content: '';
 			width: 100%;
