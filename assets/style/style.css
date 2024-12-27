@@ -152,6 +152,12 @@ body {
   }
 }
 
+.logo img {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .container {
   max-width: 1340px;
   width: 100%;
