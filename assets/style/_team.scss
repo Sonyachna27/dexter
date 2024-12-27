@@ -1,6 +1,7 @@
 .team{
 	padding: 70px 0 0 0;
 	background: $--radial-gradient;
+	overflow: hidden;
 	@media screen and (min-width:768px) {
 		padding: 100px 0 0 0;
 	}

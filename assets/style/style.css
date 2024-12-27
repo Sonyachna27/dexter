@@ -1130,6 +1130,7 @@ form fieldset input[type=radio]:checked:after {
 .team {
   padding: 70px 0 0 0;
   background: radial-gradient(50% 50% at 50% 50%, #465941 0%, #313F2D 100%);
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .team {
