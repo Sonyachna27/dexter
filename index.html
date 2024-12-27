@@ -59,12 +59,12 @@
 					<div class="header__menu">
 						<nav>
 							<ul>
-								<li><a href="#">Про нас</a></li>
-								<li><a href="./page-about.html">Послуги</a></li>
-								<li><a href="./page-services.html">Команда </a></li>
-								<li><a href="./page-gallery.html">Новини</a></li>
-								<li><a href="./page-contact.html">Питання</a></li>
-								<li><a href="./page-contact.html">Контакти</a></li>
+								<li><a href="#about">Про нас</a></li>
+								<li><a href="#services">Послуги</a></li>
+								<li><a href="#command">Команда </a></li>
+								<li><a href="./page-news.html">Новини</a></li>
+								<li><a href="#faq">Питання</a></li>
+								<li><a href="#contact">Контакти</a></li>
 							</ul>
 						</nav>
 						<button data-open="open" class="btn">КОНСУЛЬТАЦІЯ</button>
@@ -116,6 +116,7 @@
 			</div>
 		</div>
 	</header>
+	<main>
 	<section class="hero">
 		<div class="hero__img">
 			<img src="./assets/images/hero-img.jpg" alt="">
@@ -126,7 +127,7 @@
 					<h1><strong>DEXTER</strong> — Адвокатська компанія в Києві, що забезпечує професійну юридичну допомогу</h1>
 				<div class="space"></div>
 				<p>Наша команда досвідчених адвокатів забезпечує ефективний захист прав клієнтів, пропонуючи рішення для бізнесу та фізичних осіб у різних правових сферах.</p>
-				<a href="#" class="btn">ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ</a>
+				<button data-open="open"  class="btn">ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ</button>
 				</div>
 			</div>
 		</div>
@@ -165,7 +166,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="team mb-m">
+	<section class="team mb-m" id="about">
 		<div class="container">
 			<div class="team__container">
 				<div class="team__content">
@@ -182,7 +183,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="command mb-m">
+	<section class="command mb-m" id="command">
 		<div class="container">
 			<div class="command__container">
 				<div class="command__title title-justify">
@@ -273,7 +274,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="services">
+	<section class="services" id="services">
 		<div class="container">
 			<div class="services__container">
 				<div class="services__title center-title">
@@ -287,7 +288,7 @@
 						<div class="services__item__content">
 							<h3>Консультації з правових питань</h3>
 							<p>Наші адвокати надають індивідуальні консультації з будь-яких юридичних питань, допомагаючи клієнтам зрозуміти свої права та обов'язки. Ми пропонуємо детальний аналіз ситуації та оптимальні шляхи вирішення.</p>
-							<a class="services__item__content__link" href="./page-services.html">ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ</a>
+							<button data-open="open"  class="services__item__content__link" >ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ</button>
 						</div>
 					</div>
 					<div class="services__item">
@@ -297,8 +298,8 @@
 						<div class="services__item__content">
 							<h3>Супровід угод та договорів</h3>
 							<p>Професійна підготовка, аналіз та юридичний супровід договорів і угод забезпечують надійний захист ваших інтересів. Ми гарантуємо прозорість умов та відповідність усім юридичним нормам.</p>
-							<a class="services__item__content__link" href="./page-services.html">ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ</a>
-						</div>
+							<button data-open="open"  class="services__item__content__link">ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ</button>				
+								</div>
 					</div>
 					<div class="services__item">
 					<div class="services__item__img"> 
@@ -307,7 +308,7 @@
 						<div class="services__item__content">
 							<h3>Корпоративне право</h3>
 							<p>Dexter надає повний юридичний супровід бізнесу: реєстрація компаній, внесення змін до статутних документів, правовий супровід угод та реорганізація бізнес-структур.</p>
-							<a class="services__item__content__link" href="./page-services.html">ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ</a>
+							<button data-open="open"  class="services__item__content__link" >ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ</button>
 						</div>
 					</div>
 					<div class="services__item">
@@ -317,7 +318,7 @@
 						<div class="services__item__content">
 							<h3>Захист інтелектуальної власності</h3>
 							<p>Ми допоможемо зареєструвати торгові марки, патенти та авторські права, а також захистити вашу інтелектуальну власність у разі її порушення.</p>
-							<a class="services__item__content__link" href="./page-services.html">ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ</a>
+							<button data-open="open"  class="services__item__content__link" >ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ</button>
 						</div>
 					</div>
 				</div>
@@ -354,7 +355,7 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide news__slide news__item">
 								<a href="./page-news.html" class="news__item__img">
-									<img src="./assets/images/./hero-img.jpg" alt="Верховний Суд України змінив">
+									<img src="./assets/images/hero-img.jpg" alt="Верховний Суд України змінив">
 								</a>
 								<div class="news__item__content">
 									<a href="./page-news.html" class="news__item__content__title">	
@@ -378,7 +379,7 @@
 							</div>
 							<div class="swiper-slide news__slide news__item">
 								<a href="./page-news.html" class="news__item__img">
-									<img src="./assets/images/./hero-img.jpg" alt="Верховний Суд України змінив">
+									<img src="./assets/images/hero-img.jpg" alt="Верховний Суд України змінив">
 								</a>
 								<div class="news__item__content">
 									<a href="./page-news.html" class="news__item__content__title">	
@@ -408,7 +409,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="faq">
+	<section class="faq" id="faq">
 		<div class="container">
 			<div class="faq__container">
 				<div class="faq__title center-title">
@@ -564,7 +565,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="contacts">
+	<section class="contacts" id="contact">
 			<div class="contacts__frame">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.81649700957!2d30.534657100000004!3d50.4445186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfac9dee308d%3A0x2e7be8ae1dba0888!2z0LLRg9C70LjRhtGPINCb0LjQv9GB0YzQutCwLCAxMCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1735220543955!5m2!1suk!2sua" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
@@ -607,11 +608,58 @@
 								</svg>								
 						</a>
 					</div>
-					<a href="#" class="btn">ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ</a>
+					<button data-open="open" class="btn">ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ</button>
 				</div>
 				</div>
 		</div>
 	</section>
+	<div class="popup">
+		<div class="popup-bg" data-close="close"></div>
+			<div class="popup-wrapper">
+				<div class="popup-wrap">
+					<button class="close popup-close" data-close="close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+							<rect opacity="0.5" width="48" height="48" fill="#BFA77B"/>
+							<path d="M14.8733 14.8732L33.5933 32.4507L14.8733 14.8732ZM33.8029 14.8732L15.0828 32.4507L33.8029 14.8732Z" fill="#8EB0EC"/>
+							<path d="M14.8733 14.8732L33.5933 32.4507M33.8029 14.8732L15.0828 32.4507" stroke="white" stroke-width="2"/>
+							</svg>
+					</button>
+					<div class="popup__form">
+						<div>Заповніть всі поля</div>
+						<p>Ми протягом дня ​​з вами зв’яжемось</p>
+						<form action="#" type="post">
+							<input type="text" name="name" placeholder="Як вас звуть ?">
+							<input type="tel" name="phone" placeholder="Телефон для зв’язку">
+							<input type="email" name="email" placeholder="Пошта">
+							
+							<fieldset>
+								<label>
+										<input type="radio" name="contact" value="telegram">
+										Зв’язатися по номеру телефона
+								</label>
+						
+								<label>
+										<input type="radio" name="contact" value="whatsapp">
+										Зв’язатися по WhatsApp
+								</label>
+						
+								<label >
+										<input type="radio" name="contact" value="viber">
+										Зв’язатися по Електроній пошті
+								</label>
+						
+						</fieldset>
+						
+						<div class="submit__wrap" >
+							<input type="submit" value="ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ" class="btn">
+						</div>
+					</form>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+</main>
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__container">
@@ -627,12 +675,12 @@
 								<li>
 									<a href="#">МЕНЮ</a>
 									<ul class="sub-menu">
-										<li><a href="#">Про нас</a></li>
-										<li><a href="#">Новини</a></li>
-										<li><a href="#">Послуги</a></li>
-										<li><a href="#">Контакти</a></li>
-										<li><a href="#">Команда </a></li>
-										<li><a href="#">Питання</a></li>
+											<li><a href="#about">Про нас</a></li>
+											<li><a href="#services">Послуги</a></li>
+											<li><a href="#command">Команда </a></li>
+											<li><a href="./page-news.html">Новини</a></li>
+											<li><a href="#faq">Питання</a></li>
+											<li><a href="#contact">Контакти</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -683,52 +731,7 @@
 		</div>
 		</div>
 	</footer>
-	<div class="popup">
-		<div class="popup-bg" data-close="close"></div>
-			<div class="popup-wrapper">
-				<div class="popup-wrap">
-					<button class="close popup-close" data-close="close">
-						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-							<rect opacity="0.5" width="48" height="48" fill="#BFA77B"/>
-							<path d="M14.8733 14.8732L33.5933 32.4507L14.8733 14.8732ZM33.8029 14.8732L15.0828 32.4507L33.8029 14.8732Z" fill="#8EB0EC"/>
-							<path d="M14.8733 14.8732L33.5933 32.4507M33.8029 14.8732L15.0828 32.4507" stroke="white" stroke-width="2"/>
-							</svg>
-					</button>
-					<div class="popup__form">
-						<div>Заповніть всі поля</div>
-						<p>Ми протягом дня ​​з вами зв’яжемось</p>
-						<form action="#" type="post">
-							<input type="text" name="name" placeholder="Як вас звуть ?">
-							<input type="tel" name="phone" placeholder="Телефон для зв’язку">
-							<input type="email" name="email" placeholder="Пошта">
-							
-							<fieldset>
-								<label>
-										<input type="radio" name="contact" value="telegram">
-										Зв’язатися по номеру телефона
-								</label>
-						
-								<label>
-										<input type="radio" name="contact" value="whatsapp">
-										Зв’язатися по WhatsApp
-								</label>
-						
-								<label >
-										<input type="radio" name="contact" value="viber">
-										Зв’язатися по Електроній пошті
-								</label>
-						
-						</fieldset>
-						
-						<div class="submit__wrap" >
-							<input type="submit" value="ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ" class="btn">
-						</div>
-					</form>
-					</div>
-				</div>
-			
-		</div>
-	</div>
+	
 	<script src="./assets/js/swiper.js"></script>
 	<script src="./assets/js/script.js"></script>
 </body>

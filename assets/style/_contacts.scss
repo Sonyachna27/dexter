@@ -38,9 +38,8 @@
 	&__content{
 		@media screen and (min-width:1024px) {
 			position: absolute;
-			top: 50%;
+			top: 160px;
 			left: 0;
-			transform: translateY(23%);
 			max-width: 526px;
 			width: 100%;
 		}

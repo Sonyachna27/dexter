@@ -1,5 +1,6 @@
 .footer{
 	background-color: $--green;
+	margin-top: auto;
 	&__wrapper{
 		padding: 80px 0;
 		display: flex;
@@ -60,8 +61,12 @@
 					gap: 30px;
 					padding-top: 30px;
 					border-top: 1px solid rgba(255, 252, 246, 0.30);
-					@media screen and (min-width:1024px) {
-						
+					li a{
+						transition: .3s linear;
+						@include p2-1;
+						&:hover{
+							color: #BFA77B;
+						}
 					}
 				}
 			}
