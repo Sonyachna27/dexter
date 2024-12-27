@@ -1283,6 +1283,9 @@ form fieldset input[type=radio]:checked:after {
 .services__item {
   display: flex;
   flex-direction: column;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-items: center;
 }
 @media screen and (min-width: 1024px) {
   .services__item {
@@ -1295,8 +1298,8 @@ form fieldset input[type=radio]:checked:after {
 }
 @media screen and (min-width: 1024px) {
   .services__item__img {
+    max-height: 380px;
     height: calc(100% - 25px);
-    margin: auto 0;
   }
 }
 .services__item__img img {
@@ -1304,11 +1307,14 @@ form fieldset input[type=radio]:checked:after {
      object-fit: cover;
   width: 100%;
   height: 100%;
+  max-height: 380px;
 }
 .services__item__content {
   width: 100%;
   border: 1px solid #D6D4C8;
   background: var(--White-orange, #FFF9EF);
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 40px 20px;
 }
 @media screen and (min-width: 768px) {
