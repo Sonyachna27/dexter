@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	newsSliderFunc();
 	accordionFunction();
 	handlePopup();
-
 });
 
 const animationHeader = () =>{
@@ -224,7 +223,9 @@ const prettyScroll = () =>{
 }
 
 const heroBG = () =>{
+	
 	const block = document.querySelector('.hero__img');
+	if(!block) return;
   const settings = JSON.parse(block.getAttribute('data-settings'));
 
   if (settings.background_background === "video") {
@@ -234,16 +235,6 @@ const heroBG = () =>{
     video.muted = true;
     video.loop = true;
     video.playsInline = true;
-
-    // video.style.position = "absolute";
-    // video.style.top = "50%";
-    // video.style.left = "50%";
-    // video.style.transform = "translate(-50%, -50%)";
-    // video.style.width = "100%";
-    // video.style.height = "100%";
-    // video.style.objectFit = "cover";
-    // video.style.zIndex = "-1";
-
     block.appendChild(video);
   }
 }
