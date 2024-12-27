@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-	
+	heroBG();
 	toggleMenu();
 	prettyScroll();
 	animationHeader();
@@ -221,4 +221,29 @@ const prettyScroll = () =>{
 				});
 		});
 	});
+}
+
+const heroBG = () =>{
+	const block = document.querySelector('.hero__img');
+  const settings = JSON.parse(block.getAttribute('data-settings'));
+
+  if (settings.background_background === "video") {
+    const video = document.createElement('video');
+    video.src = settings.background_video_link;
+    video.autoplay = true;
+    video.muted = true;
+    video.loop = true;
+    video.playsInline = true;
+
+    // video.style.position = "absolute";
+    // video.style.top = "50%";
+    // video.style.left = "50%";
+    // video.style.transform = "translate(-50%, -50%)";
+    // video.style.width = "100%";
+    // video.style.height = "100%";
+    // video.style.objectFit = "cover";
+    // video.style.zIndex = "-1";
+
+    block.appendChild(video);
+  }
 }

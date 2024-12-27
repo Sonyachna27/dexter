@@ -1,8 +1,9 @@
 .article{
+	margin: 0 auto;
 	margin-bottom: 80px;
 	max-width: 900px;
 	width: 100%;
-	margin: 0 auto;
+
 	@media screen and (min-width:768px) {
 		margin-bottom: 160px;
 	}
